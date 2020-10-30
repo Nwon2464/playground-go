@@ -1,0 +1,28 @@
+GET http://localhost:8000/api/books
+
+###
+
+POST http://localhost:8000/api/books
+content-type:application/json
+
+{
+    "id":"5",
+    "isbn":"399993",
+    "title":"Book Fifth",
+    "author":{"firstname":"W","lastname":"Wangfunag"}
+}
+
+###
+DELETE http://localhost:8000/api/books/8498081
+
+### 
+PUT http://localhost:8000/api/books/2
+content-type:application/json
+
+{
+    
+    "isbn":"48372",
+    "title":"Updated Title",
+    "author":{"Firstname":"JEFTT","lastname":"TOM"}
+
+}
